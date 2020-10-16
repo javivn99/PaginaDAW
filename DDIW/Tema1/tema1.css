@@ -1,0 +1,62 @@
+/* Main Primary color */
+
+.color-primary-0 { color: #03439C }	
+.color-primary-1 { color: #010D1D }
+.color-primary-2 { color: #010D1D }
+.color-primary-3 { color: #537199 }
+.color-primary-4 { color: #537199 }
+
+
+/* CABECERA */
+header {
+    height: 50px;
+    width: 100%;
+    background-color:  #03439C;
+    color: white;
+    text-align: left;
+    position:fixed;
+    top:0;
+    font-family: 'Encode Sans', sans-serif;
+
+}
+.nombre{
+    padding-left: 10px;
+    padding-bottom: 17px;
+}
+
+
+/* SECTION */
+h1 {
+    font-family: 'Bungee Inline', cursive;
+}
+section {
+    padding-top: 50px;
+}
+
+h3  {
+    color: #03439C;
+    font-family: 'Enriqueta', serif;
+}
+
+
+/* PIE DE PAGINA */
+
+
+footer{
+    height: 50px;
+    width: 100%;
+    background-color:  #03439C;
+    color: white;
+    text-align: left;
+    position:fixed; 
+    bottom:0;
+    font-family: 'Encode Sans', sans-serif;
+    
+    
+    
+}
+
+.curso{
+    padding-left: 10px;
+    padding-bottom: 17px;
+}

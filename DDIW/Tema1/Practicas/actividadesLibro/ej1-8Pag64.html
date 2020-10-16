@@ -1,0 +1,63 @@
+<!--
+    Hacer un formulario que contenga los siguientes elementos:
+    -Nombre, tipo text
+    -Email, tipo email
+    -Descripcion, tipo textarea
+    -Fecha de nacimiento, tipo date
+    -Color preferido, tipo color
+    -Nivel, tipo range de 1 a 10
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1.8</title>
+</head>
+<body>
+    <form name="sampleform" action="form.php" method="POST">
+        <fieldset>
+            <!--NOMBRE-->
+            <legend>Escribe tu nombre</legend>
+            <input type="text" name="username" value="" placeholder="Escribe aqui">
+            <br><br>
+
+            <!--EMAIL-->
+            <div style="margin:lem;">
+                <label for="email">Email</label><br>
+                <input id="email" name="email" placeholder="Introduce tu email" type="email"/>
+            </div>
+            <br>
+
+            <!--DESCRIPCION-->
+            <div style="margin:lem;">
+                <div>
+                    <label for="textarea">Descripcion</label></div>
+                    <textarea id="textarea" name="Descripcion" placeholder="Introduce aqui una descirpcion" cols="50" rows="8"></textarea>
+            </div>
+            <br>
+
+            <!--FECHA-->
+            <div style="margin: lem;">
+                <label for="date">Introduce una fecha</label><br>
+                <input id="date" name="date" placeholder="Introduce tu fecha de nacimiento" type="date"/>
+            </div>
+            <div style="margin: lem;"></div><br><br>
+
+            <!--COLOR-->
+            <div style="margin: lem;">
+                <label for="color">Elige tu color favorito</label><br>
+                <input id="color" name="color" placeholder="Elige un color" type="color"/>
+            </div>
+            <br>
+            
+            <!--NIVEL-->
+            <label for="rateActividad">Valora esta actividad</label>
+            <input id="rateActividad" name="rate" type="range" min="1" max="10" value="1"><br><br>
+            <input type="submit">
+
+        </fieldset>
+    </form>
+</body>
+</html>

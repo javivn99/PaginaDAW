@@ -1,0 +1,36 @@
+<!--
+    Crea una pagina web que contenga un formulario con:
+    -Una caja de texto
+    -Un boton
+    -Un datalist asociado con varios nombres de lugares
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 1.7</title>
+</head>
+<body>
+    <form name="sampleform" action="form.php" method="POST">
+        <fieldset>
+            <legend>Escribe tu nombre</legend>
+            <input type="text" name="username" value="" placeholder="Escribe aqui">
+            <br><br>
+
+            <legend>Selecciona la ciudad que mas te gusta</legend>
+            <input list="lugaresLista" id="lugares" placeholder="Pincha aqui"/>
+            <datalist id="lugaresLista">
+                <option value="Soria"></option>
+                <option value="Madrid"></option>
+                <option value="Valladolid"></option>
+                <option value="Burgos"></option>
+            </datalist>
+            <br><br>
+
+            <input type="submit" name="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
