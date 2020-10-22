@@ -3,6 +3,10 @@
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+img{
+  vertical-align:middle;
+}
+
 .fondoBody{
   background-color: rgb(247, 247, 247);
 }
