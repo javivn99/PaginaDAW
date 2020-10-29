@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de estilos</title>
+    <style>
+        .superficie{
+            width: 200px;
+            height: 100px;
+            padding-left: 10px;
+        }
+
+        div {
+            display: block;
+        }
+
+        /* Colores */
+
+        .color1 {
+            background-color: #03439C;
+            color: white;
+        }
+
+        .color2 {
+            background-color: #537199;
+            color: white;
+        }
+
+        .color3 {
+            background-color: #010D1D;
+            color: white;
+        }
+
+        /* Colores con transparencia */
+
+        .colorT1{
+            background-color: rgb(3, 67, 156, 1);
+            color: white;
+        }
+
+        .colorT2{
+            background-color: rgb(3, 67, 156, 0.5);
+            color: white;
+        }
+
+        .colorT3{
+            background-color: rgb(3, 67, 156, 0.2);
+            color: white;
+        }
+
+        /* Capa con imagen de fondo */
+
+        .conFondo {
+            background-image: url(Recursos/img_tree.png);
+            background-position: top;
+            background-attachment: fixed;
+            color: black;
+        }
+
+        /* Capa con borde redondeado*/
+        .conBordeRedondeado {
+            border: 3px solid #000000;
+            border-radius: 10px;
+        }
+
+        .boton {
+            width: 40px;
+            height: 30px;
+            padding-top: 5%;
+            background-color: black;
+            color: cornsilk;
+        }
+
+    </style>
+</head>
+
+<body>
+    <article>
+    <h1>Colores</h1>
+    <div class="superficie color1">
+        <p>  #03439C </p>
+    </div>
+    <div class="superficie color2">
+        <p> #537199 </p>
+    </div>
+    <div class="superficie color3">
+        <p> #010D1D </p>
+    </div>
+    </article>
+
+    <article>
+    <h1>Colores con trasnparencia</h1>
+    <div class="superficie colorT1">
+        <p> rgb(3, 67, 156, 1) </p>
+    </div>
+    <div class="superficie colorT2">
+        <p> rgb(3, 67, 156, 0.5) </p>
+    </div>
+    <div class="superficie colorT3">
+        <p> rgb(3, 67, 156, 0.2) </p>
+    </div>
+    </article>
+
+    <article>
+    <h1>Capa con imagen de fondo</h1>
+    <div class="superficie conFondo">
+        <p>Esta capa tiene un fondo</p>
+    </div>
+    </article>
+
+
+    <article>
+    <h1>Capa con bordes redondeados</h1>
+    <div class="superficie conBordeRedondeado">
+        <p>Bordes redondeados</p>
+        <div class="boton conBordeRedondeado">
+            <buttom>Home</buttom>
+        </div>
+    </div>
+    </article>
+
+</body>
+</html>

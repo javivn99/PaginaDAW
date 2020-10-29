@@ -3,37 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu vertical con mis colores</title>
+    <title>Menu Horizontal</title>
     <style>
-
-        .color-primary-0 { color: #03439C }	
-        .color-primary-1 { color: #010D1D }
-        .color-primary-2 { color: #010D1D }
-        .color-primary-3 { color: #537199 }
-        .color-primary-4 { color: #537199 }
-
-        ul{
+        ul {
             list-style: none; /* Quita los puntos que pone por defecto a una lista */
-            width: 30%;
-            padding: 5px;
+            padding: 15px;
+        }
+
+        li {
+            display: inline; /* Para ponerlo en horizontal hay que poner esta y esta de abajo */
+            float: left; /* Con esta */
+            background-color: #03439C;
+
         }
 
         li a {
-            background-color:#03439C;
-            text-decoration: none;
-            display: block;
+            display: block; /* PAra poder clickar no solo en las letras sino tb en el espacio de alrededor */
+            padding: 10px;
+            text-decoration: none; /* Que no salgan subrayados los hipervinculos */
             color: white;
-            border-bottom: 2px solid white ;
-            padding: 5px;
-            text-align: center;
-            
+            border-right: 5px solid white;
         }
 
         li a:hover {
             background-color: white;
             color: #03439C;
         }
+
     </style>
+
 </head>
 <body>
     <ul>
