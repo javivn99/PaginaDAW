@@ -49,6 +49,15 @@ h3 {
     font-family: 'Enriqueta', serif;
 }
 
+ul {
+    list-style: none; /* Quita los puntos que pone por defecto a una lista */
+    padding: 15px;
+}
+
+li a {
+    text-decoration: none; /* Que no salgan subrayados los hipervinculos */
+}
+
 /* PIE DE PAGINA */
 
 footer {

@@ -29,6 +29,7 @@ header {
 h1  {
     
     font-family: 'Bungee Inline', cursive;
+    text-decoration: none; /* Que no salgan subrayados los hipervinculos */
 }
 
 
