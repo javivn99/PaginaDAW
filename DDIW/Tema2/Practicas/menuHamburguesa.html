@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Hamburguesa</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+        button {
+            border: none;
+            background-color: white;
+        }
+
+        .contenedor {
+            display: relative;
+            position: absolute;
+        }
+
+        .menu {
+            display: none;
+            box-shadow: 5px 5px 10px grey;
+            top: 0px; /* Con top y position: absolute hacemos que salga el menu encima del icono*/
+            position: absolute;
+            width: 100px;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            list-style: none;
+            
+            background-color:#537199;
+            color: white;
+            padding: 10px;
+            border-top: 2px solid white;
+            
+        }
+        
+        .contenedor:hover .menu {
+            display: block;
+        }
+
+        a:hover {
+            background-color: white;
+            color: #537199;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Menu de burguer</h1>
+    <div class="contenedor">
+        <button><span class="material-icons">menu</span></button>
+
+        <div class="menu">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </div>
+    </div>
+</body>
+</html>

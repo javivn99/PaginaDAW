@@ -1,0 +1,31 @@
+.ContenedorPrincipal {
+    padding-top: 30px;
+    
+    display: relative;
+    width: 80%;
+}
+
+
+.PrimerContenedor {
+    display: block;
+    float: left;
+    background-color: #075e54;
+    color: white;
+    display: absolute;
+    font-size: 20px;
+}
+
+button {
+    background-color:  #075e54;
+    border: none;
+    color: white;
+}
+
+.SegundoContenedor {
+    clear: both;
+    background-color: #075e54;
+    color: white;
+    display: flex;
+    float: left;
+
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Position</title>
+    <style>
+        button {
+            border: none;
+            height: 35px;
+            width: 200px;
+            background-color:  #03439C;
+            color: white;
+        }
+
+        .contenedor {
+            position: relative;
+            display: inline-block;
+            
+        }
+
+        .menu {
+            position: absolute;
+            left: 0;
+            display: none;
+            text-align: center;
+            width: 100%;
+            background-color:#537199;
+            box-shadow: 5px 5px 8px black;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            list-style: none;
+            color: white;
+            padding: 5px;
+            border-top: 2px solid white;
+        }
+
+        .contenedor:hover .menu {
+            display: block;
+        }
+
+        a:hover {
+            background-color: white;
+            color: #537199;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mi menu</h1>
+    <div class="contenedor">
+        <button>Pasa el raton por aqui</button>
+
+        <div class="menu">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </div>
+    </div>
+</body>
+</html>
