@@ -1,31 +1,97 @@
-.ContenedorPrincipal {
+body {
     padding-top: 30px;
+    position: relative;
+    display: block;
+    width: 500px;
     
-    display: relative;
-    width: 80%;
+}
+
+.btnChat {
+    border: 1px solid #25d366;
+    background-color: #25d366;
+    color: white;
+    border-radius: 40px;
+    font-size: 20px;
+    bottom: 500px;
+    right: 600px;
+    position: fixed;
+
 }
 
 
 .PrimerContenedor {
-    display: block;
+    display: fixed;
     float: left;
     background-color: #075e54;
     color: white;
-    display: absolute;
     font-size: 20px;
+    width: 100%;
+    padding: 5px;
+    border-right: 1px solid  #075e54;
+    border-bottom: 1px solid  #075e54;
+    border-left: 1px solid  #075e54;
 }
 
-button {
+.PrimerContenedor li {
+    list-style: none;
+    font-style: none;
+    float: left;
+}
+
+.PrimerContenedor li button {
     background-color:  #075e54;
     border: none;
     color: white;
+    right: 0px;
 }
 
 .SegundoContenedor {
-    clear: both;
     background-color: #075e54;
     color: white;
     display: flex;
     float: left;
+    width: 100%;
+    padding: 5px;
+    border-right: 1px solid  #075e54;
+    border-bottom: 1px solid  #075e54;
+    border-left: 1px solid  #075e54;
+}
+.SegundoContenedor li {
+    list-style: none;
+    font-style: none;
+    padding-right: 90px;
+}
 
+.btnCamara {
+    background-color:  #075e54;
+    border: none;
+    color: white;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.Contactos {
+    background-color: white;
+    display: block;
+    color: black;
+    width: 100%;
+    height: 75px;
+    padding: 5px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    clear: both;
+    
+}
+
+.btnContact {
+    float: left;
+    border: none;
+    background-color: white;
+}
+
+.Contactos p {
+    text-align: right;
+    font-size: 13px;
+    bottom: 2px;
 }
