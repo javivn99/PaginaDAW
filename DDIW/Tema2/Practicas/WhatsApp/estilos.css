@@ -7,13 +7,13 @@ body {
 }
 
 .btnChat {
-    border: 1px solid #25d366;
+    border: 5px solid #25d366;
     background-color: #25d366;
     color: white;
     border-radius: 40px;
     font-size: 20px;
-    bottom: 500px;
-    right: 600px;
+    top: 450px;
+    left: 400px;
     position: fixed;
 
 }
