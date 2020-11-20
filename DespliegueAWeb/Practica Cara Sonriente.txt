@@ -1,4 +1,0 @@
-Participantes: Nuria Barrios y Javier Velazquez.
-
-Enlace Github: https://github.com/javivn99/caraSonriente.git
-Enlace web: https://javivn99.github.io/caraSonriente/

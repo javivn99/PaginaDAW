@@ -6,3 +6,7 @@ h3 {
     color: #03439C;
     font-family: 'Enriqueta', serif;
 } 
+body {
+    margin: 0;
+    padding: 0;
+}

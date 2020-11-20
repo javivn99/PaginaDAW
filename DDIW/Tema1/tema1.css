@@ -6,6 +6,10 @@
 .color-primary-3 { color: #537199 }
 .color-primary-4 { color: #537199 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
 
 /* CABECERA */
 header {
