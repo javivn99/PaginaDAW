@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica Grid</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
-        body{
-            background-color: grey;
-            /* Para que los elementos ocupen el 100% hay que poner esto al body*/
-            margin: 0; 
-            padding: 0;
-            
+        html {
+            font-family: "Lucida Sans", sans-serif;
         }
+
+        body {
+            background-color: #537199;
+            /* Para que los elementos ocupen el 100% hay que poner esto al body*/
+            margin: 0;
+            padding: 0;
+
+        }
+
         header {
             text-align: center;
-            background-color: pink;
-            color: grey;
+            background-color: #03439C;
+            color: rgb(231, 231, 231);
             width: 100%;
             padding-top: 10px;
+            padding-bottom: 20px;
             top: 0;
-            height: 80px;
+            height: auto;
         }
+
+        #btnHamb {
+            color: black;
+            background-color: rgb(209, 209, 209);
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+
 
         section {
             padding: 10px;
@@ -30,30 +47,44 @@
             list-style: none;
             padding-left: 0;
             padding-right: 0x;
+            display: none;
         }
 
         li {
-            background-color:rgb(172, 172, 172);
+            background-color: #03439C;
+            color: white;
             text-decoration: none;
             display: block;
-            border: 2px solid rgb(126, 126, 126) ;
+            border: 2px solid white;
             padding: 5px;
+            margin: 5px;
             text-align: left;
         }
 
-        div {
-            background-color: palevioletred;
+        li:hover {
+            background-color: white;
+            color: #03439C;
+        }
+
+        .textos {
+            color: rgb(231, 231, 231);
+        }
+
+        #contenedorDrch {
+            background-color: rgb(170, 217, 255);
             padding: 10px;
         }
 
-        div h3, div p {
+        #contenedorDrch h3,
+        #contenedorDrch p {
             text-align: center;
         }
 
         footer {
             position: fixed;
             text-align: center;
-            background-color: pink;
+            background-color: #03439C;
+            color: rgb(231, 231, 231);
             width: 100%;
             bottom: 0px;
             height: 70px;
@@ -61,25 +92,120 @@
             font-size: 15px;
         }
 
+        @media only screen and (max-width: 600px) {
+            .menu {
+                display: none
+            }
+        }
+        
+        @media only screen and (min-width: 600px) {
+            /* For tablets: */
+            .col-s-1 {
+                width: 8.33%;
+            }
+            .col-s-2 {
+                width: 16.66%;
+            }
+            .col-s-3 {
+                width: 25%;
+            }
+            .col-s-4 {
+                width: 33.33%;
+            }
+            .col-s-5 {
+                width: 41.66%;
+            }
+            .col-s-6 {
+                width: 50%;
+            }
+            .col-s-7 {
+                width: 58.33%;
+            }
+            .col-s-8 {
+                width: 66.66%;
+            }
+            .col-s-9 {
+                width: 75%;
+            }
+            .col-s-10 {
+                width: 83.33%;
+            }
+            .col-s-11 {
+                width: 91.66%;
+            }
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+        
+        @media only screen and (min-width: 768px) {
+            /* For desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+            .col-2 {
+                width: 16.66%;
+            }
+            .col-3 {
+                width: 25%;
+            }
+            .col-4 {
+                width: 33.33%;
+            }
+            .col-5 {
+                width: 41.66%;
+            }
+            .col-6 {
+                width: 50%;
+            }
+            .col-7 {
+                width: 58.33%;
+            }
+            .col-8 {
+                width: 66.66%;
+            }
+            .col-9 {
+                width: 75%;
+            }
+            .col-10 {
+                width: 83.33%;
+            }
+            .col-11 {
+                width: 91.66%;
+            }
+            .col-12 {
+                width: 100%;
+            }
+        }
+
     </style>
 </head>
+
 <body>
     <header>
-        <h1>Chania</h1>
+        <div id="cabezera">
+            <h1>Chania</h1>
+            <span onclick="openNav();" id="btnHamb" class="material-icons">menu</span>
+        </div>
     </header>
 
     <section>
-        <ul>
-            <li>The flight</li>
-            <li>The city</li>
-            <li>The island</li>
-            <li>The food</li>
-        </ul>
+        <div class="menu" class="col-3 col-s-3">
+            <ul id="myNav">
+                <li>The flight</li>
+                <li>The city</li>
+                <li>The island</li>
+                <li>The food</li>
+            </ul>
+        </div>
 
-        <h1>The City</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus varius urna, pretium sagittis magna volutpat a. Nullam ut massa magna.</p>
+        <div class="textoCentro" class="col-6 col-s-6">
+            <h1 class="textos">The City</h1>
+            <p class="textos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus varius urna, pretium
+                sagittis magna volutpat a. Nullam ut massa magna.</p>
+        </div>
 
-        <div>
+        <div id="contenedorDrch" class="col-3 col-s-3">
             <h3>What?</h3>
             <p>Chania is a city on the island of Crete.</p>
             <h3>Where?</h3>
@@ -92,5 +218,12 @@
     <footer>
         <p>Resize the browser window to see how the content respond to the resizing.</p>
     </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
+    </script>
 </body>
+
 </html>
