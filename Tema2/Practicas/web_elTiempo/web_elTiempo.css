@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial;
+}
+
+#principal {
+    padding: 10px;
+    margin: 10px;
+}
+
+#city {
+    font-size: 3em;
+    color: #444;
+}
+
+#date {
+    font-size: 1.0em;
+    color: #666;
+}
+
+#clima {
+    font-size: 1.0em;
+    color: #666;
+}
+
+#visual {
+    float: left;
+    width: 50%;
+}
+
+.imgActual {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: top;
+}
+.grados {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: top;
+    font-size: 2.5em;
+    color: #666;
+}
+
+#info {
+    float: left;
+    width: 50%;
+}
+
+.precipitaciones {
+    display: block;
+    font-size: 1.0em;
+}
+.precipitaciones:before {
+    content: "Precipitaciones: ";
+    color: #666;
+}
+
+.humedad {
+    display: block;
+    font-size: 1.0em;
+}
+.humedad:before {
+    content: "Humedad: ";
+    color: #666;
+}
+
+.viento {
+    display: block;
+    font-size: 1.0em;
+}
+.viento:before {
+    content: "Viento: ";
+    color: #666;
+}
+
+.polen {
+    display: block;
+    font-size: 1.0em;
+}
+.polen:before {
+    content: "Viento: ";
+    color: #666;
+}
