@@ -47,6 +47,7 @@ body {
 #info {
     float: left;
     width: 50%;
+    color: #666;
 }
 
 .precipitaciones {
@@ -55,7 +56,6 @@ body {
 }
 .precipitaciones:before {
     content: "Precipitaciones: ";
-    color: #666;
 }
 
 .humedad {
@@ -64,7 +64,6 @@ body {
 }
 .humedad:before {
     content: "Humedad: ";
-    color: #666;
 }
 
 .viento {
@@ -73,7 +72,6 @@ body {
 }
 .viento:before {
     content: "Viento: ";
-    color: #666;
 }
 
 .polen {
@@ -82,5 +80,120 @@ body {
 }
 .polen:before {
     content: "Viento: ";
+}
+
+/* DIAS SIGUENTES */
+
+* {
+    box-sizing: border-box;
+}
+
+.contenedorDiario {
+    display: block;
+    height: 100%;
+    width: 100%;
+    clear: both;
+    padding-top: 10px;
+}
+.diario {
+    width: 100%;
+    border-top: 1px solid  #999;
+    display: block;
+    height: auto;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dias {
+    display: inline-block;
+    width: 23%;
+    align-items: center;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #444;
+}
+
+.diaClima {
+    display: inline-block;
+    width: 23%;
+    align-items: center;
+    vertical-align: middle;
+    
+}
+.diaClima img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.temperaturas {
+    display: inline-block;
+    width: 23%;
+    vertical-align: middle;
+}
+
+.TMax {
+    text-align: center;
+}
+
+.TMin {
+    text-align: center;
     color: #666;
+}
+
+.diaPolen {
+    display: inline-block;
+    width: 23%;
+    vertical-align: middle;
+}
+
+.polenTexto {
+    text-align: center;
+    color: #666;
+}
+
+.polenNum {
+    text-align: center;
+    
+}
+
+@media (min-width: 360px) {
+    body {
+        font-size: 1.0em;
+    }
+}
+
+@media (min-width: 500px) {
+    body {font-size: 1.0em;}
+    .dias {width: 28%;}
+    .diaClima {width: 13%;}
+    .temperaturas {width: 28%;}
+    .TMax {display: inline-block; width: 48%; text-align: right;}
+    .TMin {display: inline-block; width: 48%; text-align: right;}
+    .diaPolen {width: 28%;}
+    .polenTexto {display: inline-block; width: 70%; text-align: right;}
+    .polenNum {display: inline-block; width: 25%; text-align: left;}
+    .diaClima img {width: 64px; height: 64px;}
+}
+
+@media (min-width: 600px) {
+    .diario {
+        width: 13%;
+        display: inline-block;
+        border: none;
+       
+        margin: 5px;
+        
+    }
+    .dias{display: block; width: 100%; text-align: center;}
+    .diaClima{display: block; width: 100%; text-align: center;}
+    .temperaturas{display: block; width: 100%; text-align: center;}
+    .TMax {display: inline-block; width: 45%; text-align: center;}
+    .TMin {display: inline-block; width: 45%; text-align: center;}
+    .diaPolen{display: block;width: 100%; text-align: center; font-size: 12px;}
+    .polenTexto {display: inline-block; width: 70%; text-align: right;}
+    .polenNum {display: inline-block; width: 25%; text-align: left;}
 }
