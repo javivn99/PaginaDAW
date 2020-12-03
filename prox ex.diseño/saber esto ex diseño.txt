@@ -1,3 +1,28 @@
 flex
 sistema de rejillas
 float
+
+barra nav sticki con ico y tal vez un buscador
+zona con menu tipo whatsapp
+filas o con flex o con rejillas (4elementos). Una imagen redonda con bordes y eso
+menu desplegable(el oculto)
+un boton diseñado por nosotros.
+pie fijo tb
+
+diseño responsive que cambie la colocacion.
+
+box-sizing: border-box; //Esto sirve para que el borde ocupe en el total del espacio. Si pongo width=50% ahi va incluido todo.
+
+Mirarme esto:
+*::before,
+*::after
+
+box-sizing: inherit; //hereda el display de su clase padre.
+flex-wrap: wrap; //Cuando no cabe al encoger la pagina se va hacia abajo
+
+-ms-flex: 0 0 8.333333%; Los 2 ceros significan que cuando se encoge o expande (no se si el primero es para encoger o ampliar) si hay un 2 le afecta x2 al resto de las columnas o filas.
+
+align-content -> justifica de forma vertical
+justify-content -> justifica de forma horizontal
+
+con position absolute y luego top, buttom y eso se coloca un boton donde quieras

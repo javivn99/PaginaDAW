@@ -10,8 +10,8 @@ html {
 }
 
 *,
-*::before,
-*::after {
+*::before, /*Lo que va a hacer antes*/
+*::after { /*Lo que va a hacer despues*/ 
   box-sizing: inherit;
 }
 
