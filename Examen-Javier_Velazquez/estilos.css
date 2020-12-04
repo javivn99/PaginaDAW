@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+#cajaPrimaria {
+    width: 375px;
+    height: 620px;
+    border: 2px solid black;
+}
+
+/*CABECERA COMPLETA*/
+header {
+    width: 100%;
+    height: 10%;
+    display: block;
+    background-color: red;
+    color: white;
+    border-bottom: 1px solid black;
+    
+}
+#menuHamburguesa {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+#nombreApp {
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+#menuOpciones{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+
+/*BARRA DE NAVEGACION*/
+nav {
+    clear: both;
+    display:block;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    border-bottom: 1px solid black;
+    background-color: burlywood;
+}
+#camara {
+    width: 10%;
+    height: 100%;
+    display: inline-block;
+}
+.chatEstadoTlf {
+    width: 28%;
+    height: 100%;
+    display: inline-block;
+    align-content: center;
+}
+
+/*CUERPO PRINCIPAL*/
+section {
+    width: 100%;
+    height: 35%;
+}
+
+        /*CHATS*/
+.cajaChat {
+    width: 100%;
+    height: 33%;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    background-color: rgb(204, 204, 204);
+    display: flex;
+}
+.fotoPerfil {
+    width: 15%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+.fotoPerfil img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+}
+.infoContacto {
+    width: 65%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+.nombreContacto {
+    font-size: 16px;
+}
+.infoChat {
+    width: 15%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+.mensajesPendientes {
+    border: 1px solid black;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    
+}
+.mensajesPendientes p {
+    text-align: center;
+}
+
+
+        /*ASIDE*/
+
+aside {
+    height: 35%;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background-color: rgb(236, 236, 236);
+}
+
+#imgGrande {
+    width: 35%;
+    height: 70%;
+    float: left;
+    margin-top: 16%;
+    padding-left: 10px;
+}
+    #imgGrande img {
+        width: 100px;
+        height: 100px;
+    }
+#textoAside {
+    padding-left: 5px;
+    width: 65%;
+    height: 100%;
+    float: left;
+}
+#textoAside p {
+    margin-top: 26%;
+}
+    #btnMensaje {
+        height: 40px;
+        width: 40px;
+        border: 1px solid black;
+        border-radius: 100px;
+        text-align: right;
+    }
+        #btnMensaje span{
+            margin-right: 20%;
+        }
+
+
+
+/*FOOTER*/
+footer {
+    height: 10%;
+    width: 100%;
+    background-color: red;
+    color: white;
+}
+#iconoLupa {
+    width: 10%;
+    height: 100%;
+    display: inline-block;
+}
+#textoFooter {
+
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+    color: rgb(233, 233, 233);
+    
+}
+#iconoMicro {
+    width: 7%;
+    height: 100%;
+    display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+#cajaPrimaria {width: 100%; height: 100%;}
+.s6 {width: 45%;  height: 50%; float: left;position:sticky}
+footer {clear: both; position: absolute; bottom: 0;}
+header{position:absolute;}
+
+}
+
+/*MENU OCULTO*/
+#menuOculto {
+    border: 1px solid black;
+    width: 40%;
+    background-color: blue;
+    display: none;
+}
+
+#menuOculto li {
+    list-style: none;
+    padding: 10px;
+    text-align: center; 
+}
+#menuOculto a {
+    text-decoration: none;
+    display: block;
+    color: white;
+}
