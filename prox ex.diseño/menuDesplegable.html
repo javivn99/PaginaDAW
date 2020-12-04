@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #boton{
+            
+            width: 20%;
+            color: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-align: center;
+            margin: 0;
+        }
+
+        button {
+            background-color: red;
+            width: 100%;
+            padding: 10px;
+        }
+
+        #boton:hover #menu{
+            display: block;
+            z-index: 6;
+        }
+        #menu {
+            background-color: royalblue;
+            display:none;
+        }
+
+        #menu li {
+            list-style: none;
+            padding: 10px;
+            border-top: 1px solid white ;
+            text-decoration: none;
+            color: white;
+            box-shadow: 5px 5px 5px green;
+        }
+
+        #menu li:hover {
+            background-color: white;
+            color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mi menu</h1>
+    <br>
+    <div id="boton">
+        <button>Pasa el raton por aqui</button>
+        <div id="menu">
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+            <li>Link 4</li>
+        </div>
+    </div>
+</body>
+</html>
