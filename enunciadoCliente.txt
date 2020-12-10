@@ -1,0 +1,87 @@
+Se pide crear una pag web que permita pasar datos de un formulario de entrada a una tabla para permitir su posterior manipulacion.
+El formulario consta de los campos DNI, nombre y tlf. Estos campos iran dentro de un contenedor. La idea consiste en pasar los datos
+de ese formulario a una tabla inicialmente vacia teniendo en cuanta los siguientes aspectos:
+
+    - Los campos no tienen un formato completo.
+    - Alguno de ls campos debe rellenarse como minimo.
+    - Los campos inicialmente no son obligatorios de forma individual. No son obligatorios si el cuadro que los engloba es
+    de color negro.
+    - Podemos hacer campos obligatorios moviendo la palabra "OBLIGATORIO" que inicialmente se encuentra en la parte superior de la
+    pagina a cada uno de los cuadros que contienen los campos. En dicho caso el cuadro aparecera punteado de color rojo (es la forma
+    de indicar que el campo es obligatorio). Se puede quitar la obligatoriedad de un campo haciendo el sentido inverso al campo
+    (del campo a la palabra "OBLIGATORIO"). Tambien moviendonos de un campo obligatorio a uno no obligatorio hacemos que el destino
+    sea el obligatorio y el origen no.
+    - Al hacer click en el boton almacenar se pasaran los datos del formulario a la tabla siempre y cuando se cumplan los requisitos de 
+    obligatoriedad expuestos antes.
+    - Cuando se rellenan los campos, los datos se pasan a una tabla formando una nueva fila de datos con los valores introducidos.
+    - Si se introduce un DNI que ya esta en la tabla se realizara una operacion de modificacion. En este caso no se añadira una fila
+    sino que se modificaran los datos de los campos nombre y tlf del dni especificado.
+    - Si se hace doble clic sobre una fila de la tabla, se eliminara la fila entera.
+
+Puntuacion:
+- Cambiar la obligatoriedad de los campos con las operaciones de arrastrar y soltar (2,5 puntos)
+- Comprobar al intentar almcenar que se cumplen los requisitos de obligatoriedad (1 punto)
+- Insertar una nueva fila correctamente (2,5 puntos)
+- Modificar una fila correctamente a partir de un dni ya existente en la tabla (2 puntos)
+- Eliminar una fila al hacer doble clic sobre la misma (2 puntos)
+
+
+Codigo HTML dado por él:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Javier Velazquez</title>
+    <style>
+        .no {
+            border: 2px solid black;
+        }
+
+        .si {
+            border: 2px dotted red;
+        }
+
+        div {
+            padding: 1cm;
+            margin: 0.5cm;
+            width: 25%;
+        }
+
+        #obligatorio {
+            font-size: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Examen 2</h1>
+    <hr>
+    <span id="obligatorio">OBLIGATORIO</span>
+
+    <div id="cuadrodni">
+        DNI <br>
+        <input type="text" id="dni"/>
+    </div>
+    <div id="cuadronombre">
+        Nombre <br>
+        <input type="text" id="nombre" />
+    </div>
+    <div id="cuadrotelefono">
+        Telefono <br>
+        <input type="text" id="telefono"/>
+    </div>
+
+    <button onclick="enviar();">Almacenar</button>
+
+    <br><br>
+
+    <table>
+        <tbody id="tabla"></tbody>
+    </table>
+
+    <script type="text/javascript">
+    </script>
+</body>
+</html>

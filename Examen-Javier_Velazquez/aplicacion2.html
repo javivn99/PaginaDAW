@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYENTERPRISE</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+#cajaPrimaria {
+    width: 375px;
+    border: 2px solid black;
+}
+
+/*CABECERA COMPLETA*/
+header {
+    width: 100%;
+    position: absolute;
+    background-color: red;
+    color: white;
+    border-bottom: 1px solid black;
+    
+}
+#menuHamburguesa {
+    float: left;
+    width: 20%;
+
+}
+#nombreApp {
+    float: left;
+    width: 60%;
+
+}
+#menuOpciones{
+    float: left;
+    width: 20%;
+
+}
+
+
+/*BARRA DE NAVEGACION*/
+nav {
+    clear: both;
+    display:block;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    border-bottom: 1px solid black;
+    background-color: burlywood;
+}
+#camara {
+    width: 10%;
+    height: 100%;
+    display: inline-block;
+}
+.chatEstadoTlf {
+    width: 28%;
+    height: 100%;
+    display: inline-block;
+    align-content: center;
+}
+
+/*CUERPO PRINCIPAL*/
+section {
+    width: 100%;
+    height: 35%;
+}
+
+        /*CHATS*/
+.cajaChat {
+    width: 100%;
+    height: 33%;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    background-color: rgb(204, 204, 204);
+    display: flex;
+}
+.fotoPerfil {
+    width: 15%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+.fotoPerfil img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+}
+.infoContacto {
+    width: 65%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+.nombreContacto {
+    font-size: 16px;
+}
+.infoChat {
+    width: 15%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+.mensajesPendientes {
+    border: 1px solid black;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    
+}
+.mensajesPendientes p {
+    text-align: center;
+}
+
+
+        /*ASIDE*/
+
+aside {
+    height: 35%;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background-color: rgb(236, 236, 236);
+}
+
+#imgGrande {
+    width: 35%;
+    height: 70%;
+    float: left;
+    margin-top: 16%;
+    padding-left: 10px;
+}
+    #imgGrande img {
+        width: 100px;
+        height: 100px;
+    }
+#textoAside {
+    padding-left: 5px;
+    width: 65%;
+    height: 100%;
+    float: left;
+}
+#textoAside p {
+    margin-top: 26%;
+}
+    #btnMensaje {
+        height: 40px;
+        width: 40px;
+        border: 1px solid black;
+        border-radius: 100px;
+        text-align: right;
+    }
+        #btnMensaje span{
+            margin-right: 20%;
+        }
+
+
+
+/*FOOTER*/
+footer {
+    height: 10%;
+    width: 100%;
+    background-color: red;
+    color: white;
+}
+#iconoLupa {
+    width: 10%;
+    height: 100%;
+    display: inline-block;
+}
+#textoFooter {
+
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+    color: rgb(233, 233, 233);
+    
+}
+#iconoMicro {
+    width: 7%;
+    height: 100%;
+    display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+#cajaPrimaria {width: 100%; height: 100%;}
+.s6 {width: 45%;  height: 50%; float: left;position:sticky}
+footer {clear: both; position: absolute; bottom: 0;}
+header{position:absolute;}
+
+}
+
+/*MENU OCULTO*/
+#menuOculto {
+    border: 1px solid black;
+    width: 40%;
+    background-color: blue;
+    display: none;
+}
+
+#menuOculto li {
+    list-style: none;
+    padding: 10px;
+    text-align: center; 
+}
+#menuOculto a {
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div id="cajaPrimaria">
+        <header>
+            <div id="menuHamburguesa">
+                <p class="material-icons" id="menu">menu</p>
+            </div>
+            <div id="menuOculto">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 1</a></li>
+                </div>
+            <div id="nombreApp">
+                <h3>MYENTERPRISE</h3>
+            </div>
+            <div id="menuOpciones">
+                <span class="material-icons">more_vert</span>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li id="camara"><a href="#"><span class="material-icons">photo_camera</span></a></li>
+                <li class="chatEstadoTlf"><a href="#">CHAT</a></li>
+                <li class="chatEstadoTlf"><a href="#">ESTADO</a></li>
+                <li class="chatEstadoTlf"><a href="#">TELEFONO</a></li>
+            </ul>
+        </nav>
+
+        <section class="s6">
+                <div class="cajaChat">
+                    <div class="fotoPerfil">
+                        <img src="imagen.jpg">
+                    </div>
+                    <div class="infoContacto">
+                        <div class="nombreContacto">
+                            <p>Contacto 1</p>
+                        </div>
+                        <div class="ultMensaje">
+                            <p>Texto del ultimo mensaje</p>
+                        </div>
+                    </div>
+                    <div class="infoChat">
+                        <div class="hora">
+                            <p>Hora</p>
+                        </div>
+                        <div class="mensajesPendientes">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cajaChat">
+                    <div class="fotoPerfil">
+                        <img src="imagen.jpg">
+                    </div>
+                    <div class="infoContacto">
+                        <div class="nombreContacto">
+                            <p>Contacto 2</p>
+                        </div>
+                        <div class="ultMensaje">
+                            <p>Texto del ultimo mensaje</p>
+                        </div>
+                    </div>
+                    <div class="infoChat">
+                        <div class="hora">
+                            <p>Hora</p>
+                        </div>
+                        <div class="mensajesPendientes">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cajaChat">
+                    <div class="fotoPerfil">
+                        <img src="imagen.jpg">
+                    </div>
+                    <div class="infoContacto">
+                        <div class="nombreContacto">
+                            <p>Contacto 3</p>
+                        </div>
+                        <div class="ultMensaje">
+                            <p>Texto del ultimo mensaje</p>
+                        </div>
+                    </div>
+                    <div class="infoChat">
+                        <div class="hora">
+                            <p>Hora</p>
+                        </div>
+                        <div class="mensajesPendientes">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <aside class="s6">
+            <div id="imgGrande">
+                <img src="imagen.jpg">
+            </div>
+            <div id="textoAside">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget iaculis velit. Fusce sed fermentum nisi, sit amet suscipit enim. Sed commodo pellentesque suscipit</p>
+                <div id="btnMensaje">
+                    <span class="material-icons">local_post_office</span>
+                </div>
+            </div>
+        </aside>
+
+        <footer>
+            <div id="iconoLupa">
+                <span class="material-icons">search</span>
+            </div>
+            <div id="textoFooter">
+                <p>Search</p>
+            </div>
+            <div id="iconoMicro">
+                <span class="material-icons">mic_none</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
