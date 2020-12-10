@@ -21,24 +21,22 @@
 /*CABECERA COMPLETA*/
 header {
     width: 100%;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
     background-color: red;
     color: white;
     border-bottom: 1px solid black;
     
 }
 #menuHamburguesa {
-    float: left;
     width: 20%;
 
 }
 #nombreApp {
-    float: left;
     width: 60%;
 
 }
 #menuOpciones{
-    float: left;
     width: 20%;
 
 }
@@ -46,14 +44,22 @@ header {
 
 /*BARRA DE NAVEGACION*/
 nav {
-    clear: both;
-    display:block;
+    
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 10%;
     margin: 0;
     border-bottom: 1px solid black;
     background-color: burlywood;
 }
+nav li {
+    list-style: none;
+}
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
 #camara {
     width: 10%;
     height: 100%;
