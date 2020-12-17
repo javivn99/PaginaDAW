@@ -14,7 +14,7 @@
 }
 
 #cajaPrimaria {
-    width: 375px;
+    width: auto;
     border: 2px solid black;
 }
 
@@ -22,7 +22,7 @@
 header {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: nowrap;
     background-color: red;
     color: white;
     border-bottom: 1px solid black;
@@ -30,34 +30,45 @@ header {
 }
 #menuHamburguesa {
     width: 20%;
+    align-content: center;
+    justify-content: center;
 
 }
 #nombreApp {
     width: 60%;
+    align-content: center;
+    justify-content: center;
 
 }
 #menuOpciones{
     width: 20%;
+    align-content: center;
+    justify-content: center;
 
 }
 
 
 /*BARRA DE NAVEGACION*/
 nav {
-    
+    height: 100%;
+    list-style: none; /* Quita los puntos que pone por defecto a una lista */
+    padding: 15px;
+    /*
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 0;
     border-bottom: 1px solid black;
-    background-color: burlywood;
+    background-color: burlywood;*/
 }
 nav li {
-    list-style: none;
+    display: inline; /* Para ponerlo en horizontal hay que poner esta y esta de abajo */
+    float: left;
 }
 nav li a {
-    text-decoration: none;
-    color: black;
+    display: block; /* Para poder clickar no solo en las letras sino tb en el espacio de alrededor */
+    padding: 10px;
+    text-decoration: none; /* Que no salgan subrayados los hipervinculos */
 }
 
 #camara {
@@ -237,19 +248,18 @@ header{position:absolute;}
                 <h3>MYENTERPRISE</h3>
             </div>
             <div id="menuOpciones">
-                <span class="material-icons">more_vert</span>
+                <p class="material-icons">more_vert</p>
             </div>
         </header>
 
         <nav>
-            <ul>
-                <li id="camara"><a href="#"><span class="material-icons">photo_camera</span></a></li>
-                <li class="chatEstadoTlf"><a href="#">CHAT</a></li>
-                <li class="chatEstadoTlf"><a href="#">ESTADO</a></li>
-                <li class="chatEstadoTlf"><a href="#">TELEFONO</a></li>
-            </ul>
+            <li id="camara"><a href="#"><span class="material-icons">photo_camera</span></a></li>
+            <li class="chatEstadoTlf"><a href="#">CHAT</a></li>
+            <li class="chatEstadoTlf"><a href="#">ESTADO</a></li>
+            <li class="chatEstadoTlf"><a href="#">TELEFONO</a></li>
         </nav>
 
+        <main>
         <section class="s6">
                 <div class="cajaChat">
                     <div class="fotoPerfil">
@@ -327,7 +337,7 @@ header{position:absolute;}
                 </div>
             </div>
         </aside>
-
+    </main>
         <footer>
             <div id="iconoLupa">
                 <span class="material-icons">search</span>
