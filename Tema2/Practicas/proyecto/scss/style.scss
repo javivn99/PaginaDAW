@@ -1,0 +1,71 @@
+$miFuente: Arial;
+$color1: yellow;
+$color2: green;
+$fontSize: 18px;
+$anchura: 600px;
+
+
+
+body {
+    /* ESTO ME DA ERROR NO SE PQ
+    font: {
+        family: Helvetica, sans-serif;
+        size: 18px;
+        weight: bold;
+      }
+      
+      text: {
+        align: center;
+        transform: lowercase;
+        overflow: hidden;
+      }
+      */ 
+    font-family: $miFuente;
+    color: $color1;
+    font-size: $fontSize;
+}
+
+div {
+    width: $anchura;
+}
+
+
+//barra de navegacion
+
+nav {
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;  
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        color: $color1;
+        font-size: $miFuente;
+        background-color: $color2;
+    }
+    a:hover {
+        color: $color2;
+        background-color: $color1;
+    }
+}
+
+font: {
+    family: Helvetica, sans-serif;
+    size: 18px;
+    weight: bold;
+  }
+  
+  text: {
+    align: center;
+    transform: lowercase;
+    overflow: hidden;
+  }
