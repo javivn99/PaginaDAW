@@ -1,0 +1,14 @@
+index
+portada
+blog
+product
+cover
+album de fotos
+
+personalizar con nuestros colores y todo eso cambiando los valores de las variables
+
+guardar el css en una capreta llamada dist
+
+para saber que scss usa cada elemento con el F12 clickando sobre el te dice la ruta del archivos
+en el que se encuentra su configuracion.
+
