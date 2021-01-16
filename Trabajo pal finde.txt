@@ -1,4 +1,3 @@
-index
 portada
 blog
 product
@@ -11,4 +10,10 @@ guardar el css en una capreta llamada dist
 
 para saber que scss usa cada elemento con el F12 clickando sobre el te dice la ruta del archivos
 en el que se encuentra su configuracion.
+
+Encender scss:
+Ponerse primero en la ruta del proyecto
+sass --watch scss/bootstrap.scss css/bootstrap.css
+1 - Ruta del scss.
+2 - Ruta del css al que modifica
 
