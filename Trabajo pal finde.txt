@@ -17,3 +17,18 @@ sass --watch scss/bootstrap.scss css/bootstrap.css
 1 - Ruta del scss.
 2 - Ruta del css al que modifica
 
+
+
+
+CLASE DEL LUNES:
+
+Hacer este laboratorio:
+https://developers.google.com/web/ilt/pwa/lab-responsive-images
+La carpeta responsive-images tiene la prueba y la solucion.
+
+INstalar gimp. E instalar el complemento ese.
+Meter plug asi: C:\Users\"yourname"\AppData\Roaming\GIMP\2.10\plug-ins
+
+Una vez hecho esto bajar imagenes de violonchelos:
+https://pixabay.com/images/search/violoncelle/
+
