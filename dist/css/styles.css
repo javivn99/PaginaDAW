@@ -1,24 +1,10 @@
 /* Main Primary color */
 
-.color-primary-0 {
-    color: #03439C
-}
-
-.color-primary-1 {
-    color: #010D1D
-}
-
-.color-primary-2 {
-    color: #010D1D
-}
-
-.color-primary-3 {
-    color: #537199
-}
-
-.color-primary-4 {
-    color: #537199
-}
+.color-primary-0 { color: #03439C }	
+.color-primary-1 { color: #010D1D }
+.color-primary-2 { color: #010D1D }
+.color-primary-3 { color: #537199 }
+.color-primary-4 { color: #537199 }
 
 body {
     margin: 0;
@@ -45,6 +31,11 @@ header {
 
 /* SECTION */
 
+main{
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
 h1 {
     font-family: 'Bungee Inline', cursive;
 }
@@ -56,7 +47,7 @@ h3 {
 
 ul {
     list-style: none; /* Quita los puntos que pone por defecto a una lista */
-    padding: 15px;
+    padding: 0px 15px 15px 15px;
 }
 
 li a {
