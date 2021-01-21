@@ -18,3 +18,11 @@ sass --watch scss/bootstrap.scss css/bootstrap.css
 2 - Ruta del css al que modifica
 
 
+mirarme esto: Primer punto del T3
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web
+
+
+Hacer el laboratorio de responsive imagenes:
+https://github.com/mdn/learning-area/tree/master/html/multimedia-and-embedding
+
+
