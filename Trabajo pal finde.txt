@@ -17,6 +17,13 @@ sass --watch scss/bootstrap.scss css/bootstrap.css
 1 - Ruta del scss.
 2 - Ruta del css al que modifica
 
+_reboot.scss es importsnte para modificar.
+_variables tambien.
+
+sass --watch bootstrap.scss al bootstrap.css de mi proyecto
+
+
+
 
 mirarme esto: Primer punto del T3
 https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web
