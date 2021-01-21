@@ -5,6 +5,8 @@
 
 // Color system
 
+
+
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
@@ -164,9 +166,13 @@ $sizes: map-merge(
 // Body
 //
 // Settings for the `<body>` element.
+$fondo-Javier: rgb(132, 243, 142);
+$color-Javier: #000;
+$color-letra: rgb(255, 230, 0);
+$color-letra2: rgb(40, 15, 182);
 
-$body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-bg:                   $fondo-Javier !default;
+$body-color:                $color-letra2 !default;
 
 
 // Links
@@ -274,12 +280,13 @@ $embed-responsive-aspect-ratios: join(
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$fuene-Javier: Arial;
+$font-family-sans-serif:     $fuene-Javier !important;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              2rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                $font-size-base * 1.25 !default;
 $font-size-sm:                $font-size-base * .875 !default;
 
