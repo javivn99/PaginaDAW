@@ -6,3 +6,4 @@ Hacer el laboratorio de responsive imagenes:
 https://github.com/mdn/learning-area/tree/master/html/multimedia-and-embedding
 
 
+web.ml o algo asi es el formato de chrome. mp4 el del rest de navegadores

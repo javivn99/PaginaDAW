@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos responsive</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Practica videos responsive</h1>
+
+        <button onclick="playVideo();" class="btn btn-success">
+            Play <span class="material-icons">play_arrow</span><i class="glyphicon glyphicon-play"></i>
+        </button>
+        <button onclick="pauseVideo();" class="btn btn-warning">
+            Pause <i class="glyphicon glyphicon-pause"></i>
+        </button>
+        <button onclick="stopVideo()" class="btn btn-danger">
+            Stop <i class="glyphicon glyphicon-stop"></i>
+        </button>
+        <button onclick="rewindVideo();" class="btn btn-info">
+            Rewind <i class="glyphicon glyphicon-fast-backward"></i>
+        </button>
+    </header>
+
+    <main>
+        <div class="video">
+            <video controls id="myVideo">
+                <source src="videos/no_es_un_juego.avi" type="video/webm">
+                <source src="videos/no_es_un_juego.mp4" type="video/mp4">
+                <p>Your browser cannot play the provided video file.</p>
+            </video>
+        </div>
+    </main>
+
+    <script>
+        theVideo = document.querySelector("#myVideo");
+
+        function playVideo() {
+            theVideo.play();
+        }
+
+        function pauseVideo() {
+            theVideo.pause();
+        }
+
+        function stopVideo() {
+            theVideo.currentTime = 0;
+            theVideo.pause();
+        }
+
+        function rewindVideo() {
+            theVideo.currentTime = 0;
+        }
+    </script>
+</body>
+
+</html>

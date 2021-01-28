@@ -1,0 +1,38 @@
+@media screen and (min-width: 320px) {
+    .video {
+      width: 100%;
+      height: 100%;
+    }
+    video {
+        max-width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 770px) {
+    .video {
+      width: 75%;
+      height: 75%;
+    }
+    video {
+        max-width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .video {
+      width: 50%;
+      height: 50%;
+    }
+    video {
+        max-width: 100%;
+    }
+  }
+
+  button{
+      border: 1px solid black;
+      background-color: aquamarine;
+      border-radius: 10px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
