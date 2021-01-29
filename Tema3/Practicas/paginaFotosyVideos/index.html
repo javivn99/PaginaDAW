@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica fotos y videos resps</title>
+    <link rel="stylesheet" href="dist/css/estilos.css">
+    <script src="dist/js/botones.js" language="javascript" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!--Pagina con 2 img y 1 video responsive-->
+    <header>
+        <h1>Pagina completa con fotos y videos responsive</h1>
+    </header>
+    <!--------------------------------------->
+    <nav>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+        </ul>
+    </nav>
+    <!--------------------------------------->
+    <main>
+        <div id="contenedor_img">
+            <picture id="pic_gato">
+                <img src="dist/imagenes/gato_600.jpg" alt="foto_gato">
+                <source media="(min-width: 700px)" srcset="dist/imagenes/gato_600.jpg" />
+                <source media="(min-width: 1024px)" srcset="dist/imagenes/gato_1024.jpg" />
+                <source media="(min-width: 1920px)" srcset="dist/imagenes/gato_1920.jpg" />
+                <figcaption>Minino</figcaption>
+            </picture>
+            <picture id="pic_perro">
+                <img src="dist/imagenes/perro_600.jpg" alt="foto_perro">
+                <source media="(min-width: 700px)" srcset="dist/imagenes/perro_600.jpg" />
+                <source media="(min-width: 1024px)" srcset="dist/imagenes/perro_1024.jpg" />
+                <source media="(min-width: 1920px)" srcset="dist/imagenes/perro_1920.jpg" />
+                <figcaption>Perro</figcaption>
+            </picture>
+        </div>
+
+        <div id="contenedor_vid">
+            <video controls id="video1" poster="dist/videos/portada.png">
+                <source src="dist/videos/mocasines.webm" type="video/webm">
+                <source src="dist/videos/mocasines.mp4" type="video/mp4">
+                <source src="dist/videos/mocasines.avi" type="video/avi">
+                <p>Your browser cannot play the provided video file.</p>
+                <!-- <track kind=subtitles src="subtitulos/mocasines.vtt" srclang=es lang=es label="Español">-->
+                <track kind=subtitles src="dist/videos/subt/mocasines.vtt" srclang=en lang=en label="Ingles">
+                <track src="dist/videos/subt/mocasines.vtt" kind="subtitles" srclang="es" label="Español">
+            </video>
+        </div>
+        <!-- BOTONES -->
+        <div id="contenedor_btn">
+            <button onclick="playVideo();" class="btn btn-success">
+                Play
+            </button>
+            <button onclick="pauseVideo();" class="btn btn-warning">
+                Pause
+            </button>
+            <button onclick="stopVideo()" class="btn btn-danger">
+                Stop
+            </button>
+            <button onclick="rewindVideo();" class="btn btn-info">
+                Rewind
+            </button>
+            <button onclick="changeFilter();" class="btn btn-info">
+                Efectos
+            </button>
+        </div>
+    </main>
+    <!--------------------------------------->
+    <footer>
+        <h1>Pie de pagina aun en construccion</h1>
+    </footer>
+</body>
+
+</html>
