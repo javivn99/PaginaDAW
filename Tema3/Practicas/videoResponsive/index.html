@@ -13,32 +13,40 @@
 
     <header>
         <h1>Practica videos responsive</h1>
-
-        <button onclick="playVideo();" class="btn btn-success">
-            Play <span class="material-icons">play_arrow</span><i class="glyphicon glyphicon-play"></i>
-        </button>
-        <button onclick="pauseVideo();" class="btn btn-warning">
-            Pause <i class="glyphicon glyphicon-pause"></i>
-        </button>
-        <button onclick="stopVideo()" class="btn btn-danger">
-            Stop <i class="glyphicon glyphicon-stop"></i>
-        </button>
-        <button onclick="rewindVideo();" class="btn btn-info">
-            Rewind <i class="glyphicon glyphicon-fast-backward"></i>
-        </button>
     </header>
 
     <main>
         <div class="video">
             <video controls id="myVideo">
-                <source src="videos/no_es_un_juego.avi" type="video/webm">
-                <source src="videos/no_es_un_juego.mp4" type="video/mp4">
+                <source src="videos/mocasines.mp4" type="video/webm">
+                <source src="videos/mocasines.mp4" type="video/mp4">
+                <source src="videos/mocasines.avi" type="video/avi">
                 <p>Your browser cannot play the provided video file.</p>
+               <!-- <track kind=subtitles src="subtitulos/mocasines.vtt" srclang=es lang=es label="Español">-->
+                <track kind=subtitles src="subtitulos/mocasines.vtt" srclang=en lang=en label="Ingles">
+                    <track src="subtitulos/mocasines.vtt" kind="subtitles" srclang="es" label="Español">
             </video>
         </div>
     </main>
+    <button onclick="playVideo();" class="btn btn-success">
+        Play
+    </button>
+    <button onclick="pauseVideo();" class="btn btn-warning">
+        Pause
+    </button>
+    <button onclick="stopVideo()" class="btn btn-danger">
+        Stop
+    </button>
+    <button onclick="rewindVideo();" class="btn btn-info">
+        Rewind
+    </button>
+    <button onclick="changeFilter();" class="btn btn-info">
+        Efectos
+    </button>
 
     <script>
+
+        //FUNCION BOTONES
         theVideo = document.querySelector("#myVideo");
 
         function playVideo() {
@@ -57,6 +65,35 @@
         function rewindVideo() {
             theVideo.currentTime = 0;
         }
+
+        //FILTROS
+        var output = document.getElementById('myVideo');
+
+        var idx = 0;
+        var filters = [
+            'grayscale',
+            'sepia',
+            'blur',
+            'brightness',
+            'contrast',
+            'hue-rotate', 'hue-rotate2', 'hue-rotate3',
+            'saturate',
+            'invert',
+            ''
+        ];
+
+        function changeFilter(e) {
+            var el = e.target;
+            var effect = filters[idx++ % filters.length];
+            if (effect) {
+                el.className = effect;
+            }
+            // Do not propagate the event
+            event.stopPropagation();
+            event.preventDefault();
+        }
+
+        output.addEventListener('click', changeFilter, false);
     </script>
 </body>
 
