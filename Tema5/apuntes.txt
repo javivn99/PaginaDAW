@@ -1,0 +1,6 @@
+<div data-message="This is from the first button" tabindex="0">Click me!</div>
+<div data-message="This is from the second button" tabindex="0">Click me too!</div>
+<div data-message="This is from the third button" tabindex="0">And me!</div>
+
+tabindex="0" --> Sirve para poder dar foco con el tab a elementos que no tienen foco de forma predeterminada
+
