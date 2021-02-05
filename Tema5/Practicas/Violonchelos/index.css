@@ -1,0 +1,39 @@
+img {
+    max-width: 100%; /*IMPORTANTE PONER ESTO TANTO PARA VIDEOS COMO PARA IMAGENES*/
+  }
+  
+  img#sfo {
+    transition: width 0.5s;
+    width: 50vw;
+  }
+  
+  @media screen and (max-width: 700px) {
+    img#sfo {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    img#sfo {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+
+  figcaption {
+  color: #bb021e;
+  font-family: 'Roboto condensed', sans-serif;
+  padding: 2em 0;
+  text-align: center;
+}
+
+figure {
+  margin: 1em 0 1em 0;
+}
+
+#concierto{
+    display: block;
+    
+}

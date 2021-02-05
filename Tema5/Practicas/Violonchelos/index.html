@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica violonchelos</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Practica de imagenes de violonchelos responsive</h1>
+    <h4><a href="Tiempos de carga.pdf">Para descargar el pdf con los tiempos de descarga de la pagina.</a></h4>
+    <hr>
+
+        <figure> <!--La diferencia entre figuere y picture: Figure sirve para agrupar grupos de <picture>-->
+            <!--
+            <img id="sfo" src="images/sfo-500_small.jpg"
+            srcset="images/cello-2830670_640.jpg 640w, images/cello-2830670_1280.jpg 1280w" sizes="(max-width: 640px) 90vw, 50vw" alt="Violonchelo">
+            <figcaption>Violonchelo</figcaption>
+               -->
+        
+        
+            <picture id="concierto" tabindex="0" >
+                <source media="(min-width: 600px)" srcset="images/concierto_600.jpg"/>
+                <img id="sfo" src="images/concierto.jpg " alt="imagene de un concierto con gente bialando mucho">
+                <figcaption>Concierto</figcaption>
+            </picture>
+
+            <picture tabindex="0">
+                <source media="(min-width: 600px)" srcset="images/monki_1280.jpg"/>
+                <source media="(min-width: 1000px)" srcset="images/monki_grande.jpg">
+                <img id="sfo" src="images/monki.jpg" alt="concierto de los artik monkis bien fachero el pana">
+                <figcaption>Artic Monkis</figcaption>
+            </picture>
+             
+        </figure>
+
+        <h3>Grupo de 4 imagenes</h3>
+        <figure>
+            <!--IMG 1-->
+            <picture style="float: left;" tabindex="0">
+                <img src="images/grupo4/dj_640.jpg" alt="mesa de dj con manos manipulandola y haciendo mucho bien">
+                <source media="(min-width: 600px)"srcset="images/grupo4/dj_1280.jpg">
+                <source media="(min-width: 1200px)"srcset="images/grupo4/dj_1920.jpg">
+            </picture>
+
+            <!--IMG 2-->
+            <picture style="float: left;" tabindex="0">
+                <img src="images/grupo4/micro_640.jpg" alt="microfonos preparados pal concierto">
+                <source media="(min-width: 600px)"srcset="images/grupo4/micro_1280.jpg">
+                <source media="(min-width: 1200px)"srcset="images/grupo4/micro_1920.jpg">
+            </picture>
+
+            <!--IMG 3-->
+            <picture style="clear: both; float: left;" tabindex="0">
+                <img src="images/grupo4/SAXO_640.jpg" alt="soxofon bien bonito y dorado. Es precioso">
+                <source media="(min-width: 600px)"srcset="images/grupo4/SAXO_640.jpg">
+                <source media="(min-width: 1200px)"srcset="images/grupo4/SAXO_1280.jpg">
+            </picture>
+
+            <!--IMG 4-->
+            <picture style="float: left;" tabindex="0">
+                <img src="images/grupo4/tocadiscos.jpg" alt="vinilo siendo pinchado por un tocadiscos en blanco y negro">
+                <source media="(min-width: 600px)"srcset="images/grupo4/tocadiscos_1280.jpg">
+                <source media="(min-width: 1200px)"srcset="images/grupo4/tocadiscos_1920.jpg">
+            </picture>
+
+            <figcaption style="clear: both;">Galeria de 4</figcaption>
+        </figure>
+        
+</body>
+</html>
