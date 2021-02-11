@@ -4,3 +4,4 @@
 
 tabindex="0" --> Sirve para poder dar foco con el tab a elementos que no tienen foco de forma predeterminada
 
+En accesibolity-area mirarme los ejerciciso esos
