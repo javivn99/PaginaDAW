@@ -5,3 +5,19 @@ https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Add
 Hacer el laboratorio de responsive imagenes:
 https://github.com/mdn/learning-area/tree/master/html/multimedia-and-embedding
 
+EXAMEN:
+-SASS
+-Imagenes y videos responsives
+
+
+PRACTICA:
+-HEADER
+-NAV
+-MAIN
+-FOOTER
+-USAR ETIQUETAS SEMANTICAS CON TODO
+-IMAGENES Y VIDEOS ACCESIBLES
+-TEXTOS ACCESIBLES
+-PONER LO DE QUE HABLE Y ESO
+-COLORES QUE CONTRASTEN ENTRE SI
+-ROLES
