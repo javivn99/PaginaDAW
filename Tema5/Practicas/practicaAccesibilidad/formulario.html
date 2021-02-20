@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Accesibilidad</title>
+    <link rel="stylesheet" href="dist/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1 role="heading" tabindex="0">Practica de Accesibilidad</h1>
+        <h3 role="heading" tabindex="0">Javier Velazquez Nieto</h3>
+    </header>
+
+    <nav role="navigation">
+        <ul>
+            <li><a href="index.html">Imagenes</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+            <li><a href="accesibilidad.html">Testeo y Evaluacion</a></li>
+        </ul>
+    </nav>
+
+    <main role="main" style="padding-top: 40px;">
+        <form action="#" target="" method="get" name="formDatosPersonales">
+
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+        
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="1r Apellido"/>
+        
+            <label for="email" >Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required/>
+        
+            <label for="asunto">Asunto</label>
+            <input type ="text" name="asunto" id="asunto" placeholder="Titular de la consulta"/>
+        
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" for="mensaje" placeholder="Describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+            
+            <input type="submit" name="enviar" value="Enviar datos"/>
+        </form>
+    </main>
+    <footer tabindex="0" style="position: absolute;">
+        <h1>Desarrollo de Aplicaciones Web</h1>
+    </footer>
+</body>
+
+</html>

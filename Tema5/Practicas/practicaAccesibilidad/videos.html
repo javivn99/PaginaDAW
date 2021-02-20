@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Accesibilidad</title>
+    <link rel="stylesheet" href="dist/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1 role="heading" tabindex="0">Practica de Accesibilidad</h1>
+        <h3 role="heading" tabindex="0">Javier Velazquez Nieto</h3>
+    </header>
+
+    <nav role="navigation">
+        <ul>
+            <li><a href="index.html">Imagenes</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+            <li><a href="accesibilidad.html">Testeo y Evaluacion</a></li>
+        </ul>
+    </nav>
+
+    <main role="main">
+        <div id="contenedor_vid" tabindex="0" alt="Video de los simpson donde bailan dos personajes">
+            <video controls id="video1" poster="dist/videos/poster.png" tabindex="-1">
+                <source src="dist/videos/mocasines.webm" type="video/webm">
+                <source src="dist/videos/mocasines.mp4" type="video/mp4">
+                <source src="dist/videos/mocasines.avi" type="video/avi">
+                <p>Your browser cannot play the provided video file.</p>
+                <!-- <track kind=subtitles src="subtitulos/mocasines.vtt" srclang=es lang=es label="Español">-->
+                <track kind=subtitles src="dist/videos/subt/mocasines.vtt" srclang=en lang=en label="Ingles">
+                <track src="dist/videos/subt/mocasines.vtt" kind="subtitles" srclang="es" label="Español">
+                    <!--Los subtitulos no funcionan, en el ejemplo del laboratorio de google tampoco me funcionan-->
+            </video>
+        </div>
+        <!-- BOTONES -->
+        <div id="contenedor_btn">
+            <button onclick="playVideo();" class="btn btn-success">
+                Play
+            </button>
+            <button onclick="pauseVideo();" class="btn btn-warning">
+                Pause
+            </button>
+            <button onclick="stopVideo()" class="btn btn-danger">
+                Stop
+            </button>
+            <button onclick="rewindVideo();" class="btn btn-info">
+                Rewind
+            </button>
+        </div>
+        
+    </main>
+    <footer style="position: absolute;" tabindex="0">
+        <h1>Desarrollo de Aplicaciones Web</h1>
+    </footer>
+
+    <script>
+        /////////BOTONES///////////
+        theVideo = document.querySelector("#video1");
+
+        function playVideo() {
+            theVideo.play();
+        }
+
+        function pauseVideo() {
+            theVideo.pause();
+        }
+
+        function stopVideo() {
+            theVideo.currentTime = 0;
+            theVideo.pause();
+        }
+
+        function rewindVideo() {
+            theVideo.currentTime = 0;
+        }
+
+        /////FILTROS////////
+        var output = document.getElementById('video1');
+
+        var idx = 0;
+        var filters = [
+            'grayscale',
+            'sepia',
+            'blur',
+            'brightness',
+            'contrast',
+            'hue-rotate', 'hue-rotate2', 'hue-rotate3',
+            'saturate',
+            'invert',
+            ''
+        ];
+
+        function changeFilter(e) {
+            var el = e.target;
+            var effect = filters[idx++ % filters.length];
+            if (effect) {
+                el.className = effect;
+            }
+            // Do not propagate the event
+            event.stopPropagation();
+            event.preventDefault();
+        }
+
+        output.addEventListener('click', changeFilter, false);
+    </script>
+</body>
+</html>

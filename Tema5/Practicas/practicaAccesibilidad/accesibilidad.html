@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Accesibilidad</title>
+    <link rel="stylesheet" href="dist/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1 role="heading" tabindex="0">Practica de Accesibilidad</h1>
+        <h3 role="heading" tabindex="0">Javier Velazquez Nieto</h3>
+    </header>
+
+    <nav role="navigation">
+        <ul>
+            <li><a href="index.html">Imagenes</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+            <li><a href="accesibilidad.html">Testeo y Evaluacion</a></li>
+        </ul>
+    </nav>
+
+    <main role="main">
+        <div id="divTest">
+            <h2 tabindex="0">Testeo desde las herramientas de Google Chrome</h2>
+            <img tabindex="0" src="dist/images/lightHouse1.png" alt="Imagen del resultado del test LightHouse de Google Chrome. Se muestra el resultado de los test de accesibilidad desde google chrome. Los resultados son los siguientes: Performance=100. Accesibilidad=98. Mejores practicas=100. SEO=90">
+            <p>Desde la herramienta de desarrollador de Google Chrome, el resultado del test de accesibilidad del apartado LightHouse es este.</p>
+            <!------------------>
+            <img tabindex="0" src="dist/images/Tiempos de carga.png" alt="Imagen en la que se muestran los tiempos de carga de la pagina de imagenes. El resultado de carga es de 18 milisegundos. Carga el index.html, la hoja de estilos y la imagen que se muestra.">
+            <p>Los tiempos de carga de las imagenes y el contenido de la pagina es de 18ms.</p>
+            <!------------------>
+            <h2 tabindex="0">Testeo desde las herramientas de Firefox</h2>
+            <img tabindex="0" src="dist/images/accesibilidadFirefox.png" alt="Imagen del resultado de la herramienta de desarrollador de Firefox. Muestra los problemas de accesibilidad que tiene la pagina de imagenes. Dos de la cabecera, dos del main y uno del footer.">
+            <p>Desde Firefox su herramienta de accesibilidad me muestra estos errores. He comprobado algunos y segun lo que he entendido hay etiquetas que se marcan como deprecadas, por lo que no se si seran fallos muy graves o no.</p>
+        </div>
+    </main>
+    <footer tabindex="0">
+        <h1>Desarrollo de Aplicaciones Web</h1>
+    </footer>
+</body>
+
+</html>

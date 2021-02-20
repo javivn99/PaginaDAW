@@ -15,9 +15,17 @@ PRACTICA:
 -NAV
 -MAIN
 -FOOTER
--USAR ETIQUETAS SEMANTICAS CON TODO
+-USAR ETIQUETAS SEMANTICAS CON TODO: header, footer, nav, article, section, main y aside
 -IMAGENES Y VIDEOS ACCESIBLES
 -TEXTOS ACCESIBLES
 -PONER LO DE QUE HABLE Y ESO
 -COLORES QUE CONTRASTEN ENTRE SI
--ROLES
+-ROLES:
+    banner
+    complementary
+    contentinfo
+    definition
+    main
+    navigation
+    note
+    search

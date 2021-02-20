@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Accesibilidad</title>
+    <link rel="stylesheet" href="dist/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1 role="heading" tabindex="0">Practica de Accesibilidad</h1>
+        <h3 role="heading" tabindex="0">Javier Velazquez Nieto</h3>
+    </header>
+
+    <nav role="navigation">
+        <ul>
+            <li><a href="index.html">Imagenes</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+            <li><a href="accesibilidad.html">Testeo y Evaluacion</a></li>
+        </ul>
+    </nav>
+
+    <main role="main">
+        <figure> 
+            <picture id="dj">
+                <source media="(min-width: 600px)" srcset="dist/images/dj_1280.jpg"/>
+                <source media="(min-width: 1280px)" srcset="dist/images/dj_1920.jpg"/>
+                <img tabindex="0" id="sfo" src="dist/images/dj_640.jpg " alt="Imagen en la que se muestran las manos de una persona utilizando una tabla de mezclas. La persona lleva tatuajes en los brazos y un anillo.">
+                <figcaption id="infoImg" tabindex="-1">Dj pinchando</figcaption>
+            </picture>
+        </figure>
+    </main>
+    <footer tabindex="0">
+        <h1>Desarrollo de Aplicaciones Web</h1>
+    </footer>
+</body>
+
+</html>
