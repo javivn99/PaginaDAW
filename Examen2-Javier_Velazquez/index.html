@@ -11,6 +11,18 @@
 
 <body>
 
+    <header>
+        <h1>The header</h1>
+    </header>
+
+    <nav role="navigation">
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">link 2</a></li>
+            <li><a href="#">link 3</a></li>
+        </ul>
+    </nav>
+    <!--
     <figure> 
         <picture>
             <source media="(min-width: 600px)" srcset="#"/>
@@ -19,84 +31,46 @@
             <figcaption></figcaption>
         </picture>
     </figure>
+    -->
 
     <div>
-        <video controls poster="#">
-            <source src="#" type="video/webm">
-            <source src="#" type="video/mp4">
+        <h1>Video 1</h1>
+        <video controls poster="videos/poster.jpg">
+            <source src="videos/video_amapolas.webm" type="video/webm">
+            <source src="videos/video_amapolas.mp4" type="video/mp4">
             <p>Your browser cannot play the provided video file.</p>
-            <track kind="subtitles" src="#" srclang=en lang=en label="Ingles">
-            <track kind="subtitles" src="#"  srclang="es" lang=es label="Español">
+            <track kind="subtitles" src="videos/subs_eng.vtt" srclang=en lang=en label="Ingles">
+            <track kind="subtitles" src="videos/subs_español.vtt" srclang="es" lang=es label="Español">
         </video>
     </div>
 
-     <!-- BOTONES -->
-     <div id="contenedor_btn">
-        <button onclick="playVideo();" class="btn btn-success">
-            Play
-        </button>
-        <button onclick="pauseVideo();" class="btn btn-warning">
-            Pause
-        </button>
-        <button onclick="stopVideo()" class="btn btn-danger">
-            Stop
-        </button>
-        <button onclick="rewindVideo();" class="btn btn-info">
-            Rewind
-        </button>
+    <div>
+        <h1>Video 2</h1>
+        <video controls poster="videos/poster.jpg">
+            <source src="videos/video_amapolas.webm" type="video/webm">
+            <source src="videos/video_amapolas.mp4" type="video/mp4">
+            <p>Your browser cannot play the provided video file.</p>
+            <track kind="subtitles" src="videos/subs_eng.vtt" srclang=en lang=en label="Ingles">
+            <track kind="subtitles" src="videos/subs_español.vtt" srclang="es" lang=es label="Español">
+        </video>
     </div>
 
-    <script>
 
-        //FUNCION BOTONES
-        theVideo = document.querySelector("#myVideo");
+    <div>
+        <h1>Video 3</h1>
+        <video controls poster="videos/poster.jpg">
+            <source src="videos/video_amapolas.webm" type="video/webm">
+            <source src="videos/video_amapolas.mp4" type="video/mp4">
+            <p>Your browser cannot play the provided video file.</p>
+            <track kind="subtitles" src="videos/subs_eng.vtt" srclang=en lang=en label="Ingles">
+            <track kind="subtitles" src="videos/subs_español.vtt" srclang="es" lang=es label="Español">
+        </video>
+    </div>
 
-        function playVideo() {
-            theVideo.play();
-        }
 
-        function pauseVideo() {
-            theVideo.pause();
-        }
-
-        function stopVideo() {
-            theVideo.currentTime = 0;
-            theVideo.pause();
-        }
-
-        function rewindVideo() {
-            theVideo.currentTime = 0;
-        }
-
-        //FILTROS
-        var output = document.getElementById('myVideo');
-
-        var idx = 0;
-        var filters = [
-            'grayscale',
-            'sepia',
-            'blur',
-            'brightness',
-            'contrast',
-            'hue-rotate', 'hue-rotate2', 'hue-rotate3',
-            'saturate',
-            'invert',
-            ''
-        ];
-
-        function changeFilter(e) {
-            var el = e.target;
-            var effect = filters[idx++ % filters.length];
-            if (effect) {
-                el.className = effect;
-            }
-            // Do not propagate the event
-            event.stopPropagation();
-            event.preventDefault();
-        }
-
-        output.addEventListener('click', changeFilter, false);
-    </script>
+    <footer>
+        <h1>The footer</h1>
+    </footer>
 </body>
 
 </html>

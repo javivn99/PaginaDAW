@@ -1,0 +1,76 @@
+/* COLORES */
+$color_primario: rgb(145, 201, 153);
+$color_secundario: rgb(73, 131, 81);
+$color_terciario: #000;
+$color_header: rgb(109, 196, 128);
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $color_primario;
+}
+
+/*  HEADER  */
+
+header{
+    background-color: $color_header;
+}
+
+header h1{
+    margin-top:0;
+}
+
+/*   BARRA DE NAVEGACION  */
+nav{
+    height: 50px;
+}
+ul {
+    width: 100%;
+    display: block;
+    list-style: none; /* Quita los puntos que pone por defecto a una lista */
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    width: 33.3333%;
+    display: inline; /* Para ponerlo en horizontal hay que poner esta y esta de abajo */
+    float: left; /* Con esta */
+    background-color: $color_secundario;
+}
+
+li a {
+    display: block; /* Para poder clickar no solo en las letras sino tb en el espacio de alrededor */
+    padding: 15px;
+    text-decoration: none; /* Que no salgan subrayados los hipervinculos */
+    text-align: center;
+    color: white;
+    
+}
+
+li a:hover {
+    background-color: white;
+    color: $color_secundario;
+}
+
+/*  IMAGENES  */
+img {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 1024px){
+    div{
+        float: left;
+        width: 33%;
+    }
+    video{
+        box-sizing: 100%;
+        width: 90%;
+    }
+}
+
+/*  FOOTER  */
+footer{
+    clear: both;
+    background-color: $color_header;
+}
