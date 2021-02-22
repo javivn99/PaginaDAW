@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <button onclick="playVideo();" class="btn btn-success">
+        Play
+    </button>
+    <button onclick="pauseVideo();" class="btn btn-warning">
+        Pause
+    </button>
+    <button onclick="stopVideo()" class="btn btn-danger">
+        Stop
+    </button>
+    <button onclick="rewindVideo();" class="btn btn-info">
+        Rewind
+    </button>
+    <button onclick="changeFilter();" class="btn btn-info">
+        Efectos
+    </button>
+
+    <script>
+
+        //FUNCION BOTONES
+        theVideo = document.querySelector("#myVideo");
+
+        function playVideo() {
+            theVideo.play();
+        }
+
+        function pauseVideo() {
+            theVideo.pause();
+        }
+
+        function stopVideo() {
+            theVideo.currentTime = 0;
+            theVideo.pause();
+        }
+
+        function rewindVideo() {
+            theVideo.currentTime = 0;
+        }
+
+        //FILTROS
+        var output = document.getElementById('myVideo');
+
+        var idx = 0;
+        var filters = [
+            'grayscale',
+            'sepia',
+            'blur',
+            'brightness',
+            'contrast',
+            'hue-rotate', 'hue-rotate2', 'hue-rotate3',
+            'saturate',
+            'invert',
+            ''
+        ];
+
+        function changeFilter(e) {
+            var el = e.target;
+            var effect = filters[idx++ % filters.length];
+            if (effect) {
+                el.className = effect;
+            }
+            // Do not propagate the event
+            event.stopPropagation();
+            event.preventDefault();
+        }
+
+        output.addEventListener('click', changeFilter, false);
+    </script>
+</body>
+
+</html>

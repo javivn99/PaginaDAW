@@ -145,3 +145,8 @@
   -ms-filter: invert(1);
   filter: invert(1);
 }
+
+video::cue {
+  text-align: center;
+  background-color: red;
+}
